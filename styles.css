@@ -1,0 +1,351 @@
+:root {
+  --bg: #0f0f0f;
+  --bg-card: #1a1a1a;
+  --bg-column: #141414;
+  --border: #2a2a2a;
+  --text: #fafafa;
+  --text-dim: #888;
+  --text-muted: #555;
+  --fire: #ff6b35;
+  --fire-glow: rgba(255, 107, 53, 0.2);
+  --ember: #ffc107;
+  --cooking: #22d3ee;
+  --served: #4ade80;
+  --idea: #a78bfa;
+  --priority-high: #ef4444;
+  --priority-med: #f59e0b;
+  --priority-low: #22c55e;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: auto;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  animation: flame 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flame {
+  0% { transform: scale(1) rotate(-3deg); filter: brightness(1); }
+  100% { transform: scale(1.1) rotate(3deg); filter: brightness(1.2); }
+}
+
+.logo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--fire), var(--ember));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+/* Activity Bar */
+.activity-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.activity-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  flex: 1;
+  overflow-x: auto;
+}
+
+/* Columns */
+.column {
+  background: var(--bg-column);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.column-icon {
+  font-size: 1.25rem;
+}
+
+.column-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.column-count {
+  background: var(--border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.column[data-column="raw"] .column-count { background: var(--fire); color: #000; }
+.column[data-column="cooking"] .column-count { background: var(--cooking); color: #000; }
+.column[data-column="served"] .column-count { background: var(--served); color: #000; }
+.column[data-column="ideas"] .column-count { background: var(--idea); color: #000; }
+
+/* Cards Container */
+.cards {
+  flex: 1;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.card:hover {
+  border-color: var(--fire);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.card-priority {
+  display: flex;
+  gap: 2px;
+}
+
+.card-priority .flame {
+  font-size: 0.8rem;
+}
+
+.card-desc {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--border);
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+.card-time {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-left: auto;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  color: var(--fire);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.card-link:hover {
+  color: var(--ember);
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--fire);
+}
+
+.footer-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Mobile */
+@media (max-width: 1200px) {
+  .board {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .board {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .column {
+    min-height: 300px;
+  }
+  
+  .header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

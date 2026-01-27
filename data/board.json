@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "lastUpdated": "2026-01-27T21:55:00Z",
+    "lastActivity": "Bitty shipped The Kitchen 🔥"
+  },
+  "raw": [
+    {
+      "id": "raw-1",
+      "title": "Enable GitHub Pages on Brain",
+      "description": "Bob needs to enable Pages in repo settings",
+      "icon": "⚙️",
+      "priority": "high",
+      "tags": ["bob"],
+      "updated": "2026-01-27T21:55:00Z"
+    }
+  ],
+  "cooking": [],
+  "served": [
+    {
+      "id": "done-1",
+      "title": "Brain Dashboard",
+      "description": "Bob's second brain - todos, reading, projects, reference",
+      "icon": "🧠",
+      "url": "https://github.com/BBQAtBobs/Brain",
+      "tags": ["dashboard"],
+      "updated": "2026-01-27T16:00:00Z"
+    },
+    {
+      "id": "done-2",
+      "title": "GCS Trainer",
+      "description": "Glasgow Coma Scale training game for EMS",
+      "icon": "🏥",
+      "url": "https://bittybot-ai.github.io/gcs-trainer/",
+      "tags": ["game", "ems"],
+      "updated": "2026-01-27T15:25:00Z"
+    },
+    {
+      "id": "done-3",
+      "title": "Bob's Homepage",
+      "description": "Personal site at bbqatbobs.github.io",
+      "icon": "🔥",
+      "url": "https://bbqatbobs.github.io/",
+      "tags": ["site"],
+      "updated": "2026-01-27T15:47:00Z"
+    },
+    {
+      "id": "done-4",
+      "title": "Bitty's Homepage",
+      "description": "AI assistant homepage",
+      "icon": "🤖",
+      "url": "https://bittybot-ai.github.io/",
+      "tags": ["site"],
+      "updated": "2026-01-27T15:43:00Z"
+    },
+    {
+      "id": "done-5",
+      "title": "Exa Search Skill",
+      "description": "Web search, code search, company research via Exa API",
+      "icon": "🔍",
+      "tags": ["skill", "clawdbot"],
+      "updated": "2026-01-27T14:30:00Z"
+    }
+  ],
+  "ideas": [
+    {
+      "id": "idea-1",
+      "title": "Fire Interview Prep App",
+      "description": "Oral board practice with scenarios and timing",
+      "icon": "🚒",
+      "tags": ["career", "app"],
+      "updated": "2026-01-27T21:55:00Z"
+    },
+    {
+      "id": "idea-2",
+      "title": "Protocol Lookup Tool",
+      "description": "Quick reference for EMS protocols",
+      "icon": "📋",
+      "tags": ["ems", "reference"],
+      "updated": "2026-01-27T21:55:00Z"
+    }
+  ]
+}

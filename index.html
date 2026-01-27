@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kitchen | Bob & Bitty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🔥</span>
+        <h1>The Kitchen</h1>
+      </div>
+      <p class="tagline">Where Bob & Bitty cook up projects</p>
+    </header>
+
+    <div class="activity-bar" id="activity-bar">
+      <span class="activity-icon">📡</span>
+      <span class="activity-text" id="activity-text">Loading...</span>
+    </div>
+
+    <main class="board">
+      <section class="column" data-column="raw">
+        <div class="column-header">
+          <span class="column-icon">🥩</span>
+          <h2>Raw</h2>
+          <span class="column-count" id="raw-count">0</span>
+        </div>
+        <div class="cards" id="raw-cards"></div>
+      </section>
+
+      <section class="column" data-column="cooking">
+        <div class="column-header">
+          <span class="column-icon">🍳</span>
+          <h2>Cooking</h2>
+          <span class="column-count" id="cooking-count">0</span>
+        </div>
+        <div class="cards" id="cooking-cards"></div>
+      </section>
+
+      <section class="column" data-column="served">
+        <div class="column-header">
+          <span class="column-icon">✅</span>
+          <h2>Served</h2>
+          <span class="column-count" id="served-count">0</span>
+        </div>
+        <div class="cards" id="served-cards"></div>
+      </section>
+
+      <section class="column" data-column="ideas">
+        <div class="column-header">
+          <span class="column-icon">💡</span>
+          <h2>Recipe Ideas</h2>
+          <span class="column-count" id="ideas-count">0</span>
+        </div>
+        <div class="cards" id="ideas-cards"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-links">
+        <a href="https://bbqatbobs.github.io/" class="footer-link">Bob</a>
+        <a href="https://bittybot-ai.github.io/" class="footer-link">Bitty</a>
+        <a href="https://bbqatbobs.github.io/Brain/" class="footer-link">Brain</a>
+        <a href="https://github.com/bittybot-ai/kitchen" class="footer-link">GitHub</a>
+      </nav>
+      <p class="footer-tag">cooked with 🔥 by Bob & Bitty</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
