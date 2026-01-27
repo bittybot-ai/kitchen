@@ -1,29 +1,28 @@
 {
   "meta": {
-    "lastUpdated": "2026-01-27T21:55:00Z",
-    "lastActivity": "Bitty shipped The Kitchen 🔥"
+    "lastUpdated": "2026-01-27T22:06:00Z",
+    "lastActivity": "Brain is live! 🧠"
   },
-  "raw": [
-    {
-      "id": "raw-1",
-      "title": "Enable GitHub Pages on Brain",
-      "description": "Bob needs to enable Pages in repo settings",
-      "icon": "⚙️",
-      "priority": "high",
-      "tags": ["bob"],
-      "updated": "2026-01-27T21:55:00Z"
-    }
-  ],
+  "raw": [],
   "cooking": [],
   "served": [
+    {
+      "id": "done-6",
+      "title": "The Kitchen",
+      "description": "Shared project board for Bob & Bitty",
+      "icon": "🔥",
+      "url": "https://bittybot-ai.github.io/kitchen/",
+      "tags": ["dashboard"],
+      "updated": "2026-01-27T21:55:00Z"
+    },
     {
       "id": "done-1",
       "title": "Brain Dashboard",
       "description": "Bob's second brain - todos, reading, projects, reference",
       "icon": "🧠",
-      "url": "https://github.com/BBQAtBobs/Brain",
+      "url": "https://bbqatbobs.github.io/Brain/",
       "tags": ["dashboard"],
-      "updated": "2026-01-27T16:00:00Z"
+      "updated": "2026-01-27T22:06:00Z"
     },
     {
       "id": "done-2",
