@@ -1,43 +1,18 @@
 {
   "meta": {
-    "lastUpdated": "2026-01-28T03:16:00Z",
-    "lastActivity": "Skills wishlist added to queue 📋"
+    "lastUpdated": "2026-01-28T03:37:00Z",
+    "lastActivity": "3 quick wins checked off ✅"
   },
   "raw": [
-    {
-      "id": "skill-1",
-      "title": "ElevenLabs TTS",
-      "description": "Voice responses, hands-free briefings",
-      "icon": "🎙️",
-      "priority": "high",
-      "tags": ["quick-win", "5min"],
-      "updated": "2026-01-28T03:16:00Z"
-    },
-    {
-      "id": "skill-2",
-      "title": "OpenAI Image Gen",
-      "description": "DALL-E for visuals, thumbnails",
-      "icon": "🎨",
-      "priority": "high",
-      "tags": ["quick-win", "5min"],
-      "updated": "2026-01-28T03:16:00Z"
-    },
-    {
-      "id": "skill-3",
-      "title": "Brave Search API",
-      "description": "Backup web search",
-      "icon": "🔍",
-      "priority": "high",
-      "tags": ["quick-win", "5min"],
-      "updated": "2026-01-28T03:16:00Z"
-    },
     {
       "id": "skill-4",
       "title": "Google Calendar",
       "description": "Read/write calendar, check availability",
       "icon": "📅",
       "priority": "high",
-      "tags": ["30min"],
+      "tags": [
+        "30min"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -46,7 +21,9 @@
       "description": "Push reminders to iPhone",
       "icon": "📱",
       "priority": "high",
-      "tags": ["needs-research"],
+      "tags": [
+        "needs-research"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -55,7 +32,9 @@
       "description": "Sync with Brain dashboard",
       "icon": "📝",
       "priority": "medium",
-      "tags": ["15min"],
+      "tags": [
+        "15min"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -64,7 +43,9 @@
       "description": "Transcribe audio/video",
       "icon": "🎧",
       "priority": "medium",
-      "tags": ["skill-exists"],
+      "tags": [
+        "skill-exists"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -73,7 +54,9 @@
       "description": "Summarize videos without watching",
       "icon": "📺",
       "priority": "medium",
-      "tags": ["needs-research"],
+      "tags": [
+        "needs-research"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -82,7 +65,9 @@
       "description": "For content brand plays",
       "icon": "🐦",
       "priority": "low",
-      "tags": ["future"],
+      "tags": [
+        "future"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -91,7 +76,9 @@
       "description": "Smart home control",
       "icon": "🏠",
       "priority": "low",
-      "tags": ["future"],
+      "tags": [
+        "future"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -100,7 +87,9 @@
       "description": "Text for urgent stuff",
       "icon": "📲",
       "priority": "low",
-      "tags": ["future"],
+      "tags": [
+        "future"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     },
     {
@@ -109,7 +98,9 @@
       "description": "Context-aware responses",
       "icon": "📍",
       "priority": "low",
-      "tags": ["future"],
+      "tags": [
+        "future"
+      ],
       "updated": "2026-01-28T03:16:00Z"
     }
   ],
@@ -121,7 +112,9 @@
       "description": "Shared project board for Bob & Bitty",
       "icon": "🔥",
       "url": "https://bittybot-ai.github.io/kitchen/",
-      "tags": ["dashboard"],
+      "tags": [
+        "dashboard"
+      ],
       "updated": "2026-01-27T21:55:00Z"
     },
     {
@@ -130,7 +123,9 @@
       "description": "Bob's second brain",
       "icon": "🧠",
       "url": "https://bbqatbobs.github.io/Brain/",
-      "tags": ["dashboard"],
+      "tags": [
+        "dashboard"
+      ],
       "updated": "2026-01-27T22:06:00Z"
     },
     {
@@ -139,7 +134,10 @@
       "description": "Glasgow Coma Scale training game",
       "icon": "🏥",
       "url": "https://bittybot-ai.github.io/gcs-trainer/",
-      "tags": ["game", "ems"],
+      "tags": [
+        "game",
+        "ems"
+      ],
       "updated": "2026-01-27T15:25:00Z"
     },
     {
@@ -148,7 +146,9 @@
       "description": "bbqatbobs.github.io",
       "icon": "🔥",
       "url": "https://bbqatbobs.github.io/",
-      "tags": ["site"],
+      "tags": [
+        "site"
+      ],
       "updated": "2026-01-27T15:47:00Z"
     },
     {
@@ -157,7 +157,9 @@
       "description": "bittybot-ai.github.io",
       "icon": "🤖",
       "url": "https://bittybot-ai.github.io/",
-      "tags": ["site"],
+      "tags": [
+        "site"
+      ],
       "updated": "2026-01-27T15:43:00Z"
     },
     {
@@ -165,7 +167,9 @@
       "title": "Exa Search Skill",
       "description": "Neural web search via Exa API",
       "icon": "🔍",
-      "tags": ["skill"],
+      "tags": [
+        "skill"
+      ],
       "updated": "2026-01-27T14:30:00Z"
     },
     {
@@ -173,7 +177,9 @@
       "title": "Gmail Integration",
       "description": "Email via Himalaya + AWS Secrets Manager",
       "icon": "📧",
-      "tags": ["skill"],
+      "tags": [
+        "skill"
+      ],
       "updated": "2026-01-28T02:44:00Z"
     },
     {
@@ -181,7 +187,9 @@
       "title": "Discord Integration",
       "description": "BBQ-HQ server with channels",
       "icon": "💬",
-      "tags": ["channel"],
+      "tags": [
+        "channel"
+      ],
       "updated": "2026-01-28T02:59:00Z"
     },
     {
@@ -189,8 +197,40 @@
       "title": "AWS Secrets Manager",
       "description": "Secure credential management",
       "icon": "🔐",
-      "tags": ["infra"],
+      "tags": [
+        "infra"
+      ],
       "updated": "2026-01-28T02:20:00Z"
+    },
+    {
+      "id": "done-10",
+      "title": "ElevenLabs TTS",
+      "description": "Voice responses enabled",
+      "icon": "🎙️",
+      "tags": [
+        "skill"
+      ],
+      "updated": "2026-01-28T03:37:00Z"
+    },
+    {
+      "id": "done-11",
+      "title": "OpenAI Image Gen",
+      "description": "DALL-E ready",
+      "icon": "🎨",
+      "tags": [
+        "skill"
+      ],
+      "updated": "2026-01-28T03:37:00Z"
+    },
+    {
+      "id": "done-12",
+      "title": "Brave Search",
+      "description": "Backup web search",
+      "icon": "🔍",
+      "tags": [
+        "skill"
+      ],
+      "updated": "2026-01-28T03:37:00Z"
     }
   ],
   "ideas": [
@@ -199,7 +239,10 @@
       "title": "Fire Interview Prep App",
       "description": "Oral board practice with scenarios and timing",
       "icon": "🚒",
-      "tags": ["career", "app"],
+      "tags": [
+        "career",
+        "app"
+      ],
       "updated": "2026-01-27T21:55:00Z"
     },
     {
@@ -207,7 +250,10 @@
       "title": "Protocol Lookup Tool",
       "description": "Quick reference for EMS protocols",
       "icon": "📋",
-      "tags": ["ems", "reference"],
+      "tags": [
+        "ems",
+        "reference"
+      ],
       "updated": "2026-01-27T21:55:00Z"
     }
   ]
